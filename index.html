@@ -10,9 +10,14 @@
     <meta name="description" content="descrição bacanuda">
     <meta name="keywords" content="html, tecnologia">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/estilo.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <link rel="stylesheet" href="css/estilo.css">
 
 </head>
 
@@ -20,12 +25,12 @@
 
     <header class="main-header">
 
-        <a href="index.html" class="main=header-link">
-            <img src="" alt="texto a ver com a imagem"></a>
+        <a href="index.html" class="main-header-link">
+            <img src="images/avatar.jpg" alt="texto a ver com a imagem"></a>
 
-        <h1>
+        <h1 class="main-header-title">
             Trabalhos e Groselhas <br><strong>Daniel Tapias Morales</strong>,<br> zé ninguem qualquer
-            Retirado de<a href="http://html5up.net.">html5up.net.</a>
+            Retirado de<a href="http://html5up.net." class="main-header-link"> html5up.net.</a>
         </h1>
 
     </header>
@@ -135,19 +140,22 @@
 
             <h4>Text</h4>
             <p>
-                This is <b>bold</b> and this is <strong>strong</strong>. This is <i>Italic</i> and this is <em>emphasized</em>. This is <sup>superscriptv</sup> text and this is<sub>subscript</sup> text. This is underlined and this is <code>code for (;;) { ... }</code>. Finally, this is<a href="#"> a link</a>.
-                Esta é uma citação tirada da Mozilla Developer Center.
-                According to Mozilla's website, Firefox 1.0 was released in 2004 and became a big success.
+                This is <b>bold</b> and this is <strong>strong</strong>. This is <i>Italic</i> and this is
+                <em>emphasized</em>. This is <sup>superscriptv</sup> text and this is<sub>subscript</sup> text. This is
+                    underlined and this is <code>code for (;;) { ... }</code>. Finally, this is<a href="#"> a link</a>.
+                    Esta é uma citação tirada da Mozilla Developer Center.
+                    According to Mozilla's website, Firefox 1.0 was released in 2004 and became a big success.
             </p>
 
             <blockquote cite="http://developer.mozilla.org">
-             <p>
-                Está é uma citação tirada da Mozilla Developer Center.
+                <p>
+                    Está é uma citação tirada da Mozilla Developer Center.
 
-             </p>
+                </p>
             </blockquote>
             <p>According to Mozilla´s,
-                <q cite="http://www.mozilla.org/en-US/about/history/delails">Firefox 1.0 was realizad in 2004 and become a big success.</q>
+                <q cite="http://www.mozilla.org/en-US/about/history/delails">Firefox 1.0 was realizad in 2004 and become
+                    a big success.</q>
             </p>
             <h4>PreFormatado</h4>
             <pre>
@@ -184,20 +192,189 @@
             </ul>
 
             <h5>Actions</h5>
+            <!--links parecidos com botoens(ou botoens com link)-->
             <p>
-            <a href="#"class="botton-default">Default </a>
-            <a href="#"class="botton-default botton-default-stroke">Default</a>
+                <a href="#" class="botton-default">Default </a>
+                <a href="#" class="botton-default botton-default-stroke">Default</a>
             </p>
 
-             <p>
-            <a href="#"class="botton-default botton-default-small">Default </a>
-            <a href="#"class="botton-default button-default-small botton-default-stroke">Default</a>
+            <p>
+                <a href="#" class="botton-default botton-default-small">Default </a>
+                <a href="#" class="botton-default button-default-small botton-default-stroke">Default</a>
             </p>
 
-             <p>
-            <a href="#"class="botton-default button-default-full">Default </a>
-            <a href="#"class="botton-default button-default-full botton-default-stroke">Default</a>
+            <p>
+                <a href="#" class="botton-default button-default-full">Default </a>
+                <a href="#" class="botton-default button-default-full botton-default-stroke">Default</a>
             </p>
+
+            <h4>Table</h4>
+            <h5>Default</h5>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>100.00</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Item One</td>
+                        <td>Ante turpis interger.</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item three</td>
+                        <td>mobi faucibos arcu</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Four</td>
+                        <td>bolhas bolhas</td>
+                        <td>39.99</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h5>Alternate</h5>
+
+            <table class="table-alternate">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Pricee</th>
+                    </tr>
+                </thead>
+            </table>
+            <tfoot>
+                <tr>
+                    <td calspan="2"></td>
+                    <td>100.00</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Item one</td>
+                    <td>antes bla bla</td>
+                    <td>66.99</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Item one</td>
+                    <td>antes bla bla</td>
+                    <td>66.99</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Item one</td>
+                    <td>antes bla bla</td>
+                    <td>66.99</td>
+                </tr>
+            </tbody>
+            <h5>Actions</h5>
+
+            <p>
+                <button  class="botton-default">Default </button>
+                <button  class="botton-default botton-default-stroke">Default</button>
+            </p>
+
+            <p>
+                <button  class="botton-default botton-default-small">Default </button>
+                <button  class="botton-default button-default-small botton-default-stroke">Default</button>
+            </p>
+
+            <p>
+                <button  class="botton-default button-default-full">Default </button>
+                <button  class="botton-default button-default-full botton-default-stroke">Default</button>
+            </p>
+            <input type="button" class="botton-default" value="mandar">
+
+            <h5>Forms</h5>
+            
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+
+            <select>
+                <option value="1">Selecione...</option>
+                <option value="2">HTML</option>
+                <option value="3">CSS</option>
+                <option value="4">JavaScript</option>
+            </select>
+            <label>
+                <input type="radio" value="baixa" name="prioridade">Baixa Prioridade
+            </label>
+
+            <label>
+                <input type="radio" value="media" name="prioridade">Média Prioridade
+            </label>
+
+            <label>
+                <input type="radio" value="alta" name="prioridade">Alta Prioridade
+            </label>
+
+            <label> 
+                <input type="checkbox"name="copy" value="1" >Envie-me uma Copia
+            </label>
+
+            <label>
+                <input type="checkbox"name="human" value="1" >Sou Humano
+            </label>
+
+            <label for="msg">Mensagem:</label>
+
+            <textarea placeholder="digite uma mensagem" id="msg"></textarea>
+
+            <input type="submit" class="botton-default" value="Enviar">
+            <input type="reset" class="botton-default-stroke" value="Limpar">
+
+            <h3>Imagens</h3>
+            <div class="gallery-img">
+
+                <img src="images/fulls/01.jpg" alt="">
+
+            </div>
+            <div class="gallery-thumb">
+                <img src="images/thumbs/01.jpg" alt="">
+                <img src="images/thumbs/02.jpg" alt="">
+                <img src="images/thumbs/03.jpg" alt="">
+                <img src="images/thumbs/04.jpg" alt="">
+                <img src="images/thumbs/05.jpg" alt="">
+                <img src="images/thumbs/06.jpg" alt="">
+            </div>
+            <h4>Left & Right</h4>
+            <p>
+                <img src="images/avatar.jpg" alt class="img-left">
+             Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.
+            </p>
+            <p>
+                <img src="images/avatar.jpg" alt class="img-right">
+            Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.
+            </p>
+
+            
+
+
+
+
+
+
+
+
+
 
 
         </section>
