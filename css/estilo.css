@@ -1,4 +1,4 @@
-body {
+    body {
     font-family: 'Roboto Slab', serif;
     color: #666;
 
@@ -32,6 +32,16 @@ blockquote {
     margin: 2em 0;
     padding: .5em 0 .5em 1.5em;
 }
+blockquote p{
+    margin-bottom: .5em;
+}
+blockquote p:last-child{
+    margin-bottom: 0px;
+
+
+}
+
+
 
 code {
     background-color: #f7f7f7;
@@ -98,10 +108,51 @@ li {
     border-radius: 5px; 
     
 }
+.main-footer  {
+    position: fixed;
+    bottom: 0px;
+    width: 35%;
+    left:0;
+    padding: 0 54px 72px 0;
+    box-sizing: border-box;
+    text-align: right;
+    
+}
+
+.main-footer a{
+    color:rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+}
+.main-footer .ul-icons a{
+    font-size: .75em;
+    border-bottom: none;
+}
+
+.main-footer a:hover{
+    color:#49bf9d;
+
+}
+.copyright li{
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 1em;
+    color:#666; 
+    outline: none;
+    
+
+}
+.ul-icons i{
+    color: #666;
+    font-size: 25px;
+    outline: none;
+    
+
+}
 /* row ( dados)*/
 
 .row {
     overflow: auto;
+    
 
 
 }
@@ -170,20 +221,35 @@ input[type="radio"], input[type="checkbox"]{
 
 .botton-default {
     background-color: #49bf9d;
-    border: 2px solid #49bf9d;
+    border: 3px solid #49bf9d;
     color: white;
     padding: .75em 1.5em;
     border-radius: 5px;
     font-size: .8em;
     display: inline-block;
     width: auto;
+    transition: all .5s;
+    cursor: pointer;
 
 }
+.botton-default:hover{
+    background-color: #5ddeb9;
+    border-color: transparent;
+}
+
 
 .botton-default-stroke{
     background-color: white;
     border-color: #efefef;
     color: inherit;
+    background-color: white;
+
+}
+.botton-default-stroke:hover{
+        color:#49bf9d;
+        border-color:#49bf9d;
+         background-color: white;
+        
 
 }
 .botton-default-small{
@@ -310,7 +376,7 @@ h6 {
 }
 
 .main-header-link {
-    color: inherit
+    color: inherit;
 }
 
 .main-header-link:hover {
@@ -322,6 +388,10 @@ h6 {
     margin-left: 35%;
     padding: 124px 36px 72px 36px;
     box-sizing: border-box;
+    
 
 
+}
+.main-text p{
+    display: inline-block;
 }
