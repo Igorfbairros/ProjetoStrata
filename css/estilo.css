@@ -68,6 +68,14 @@ ol {
 li {
     padding-left: .5em;
 }
+.hidden{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    display: block;
+    
+}
 
 .ul-alternate {
     list-style-type: none;
